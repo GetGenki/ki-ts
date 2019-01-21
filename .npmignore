@@ -1,5 +1,5 @@
 .vscode/
-node_modules/
-tsconfig.js
-typedoc.json
-tslint.json
+# node_modules/
+# tsconfig.js
+# typedoc.json
+# tslint.json

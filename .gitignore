@@ -1,7 +1,7 @@
 package-lock.json
-node_modules/
-typings/
-lib/*
+# node_modules/
+# typings/
+# lib/*
 !lib/.gitkeep
 
 # Microsoft Visual Studio
