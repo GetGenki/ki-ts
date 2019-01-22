@@ -1,34 +1,35 @@
 {
-  "name": "ark-ts",
-  "version": "0.3.14",
-  "description": "An ARK API wrapper, written in TypeScript to interact with ARK blockchain.",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "build:docs": "typedoc --options typedoc.json src/index.ts",
-    "build:ts": "shx rm -r lib && tsc -p ./ && touch lib/.gitkeep",
-    "build:prod": "npm run build:ts && npm run build:docs && npm run copypackage",
-    "copypackage": "shx cp package.json ./lib/package.json",
-    "test": "mocha --opts .mocharc",
-    "lint": "tslint src/**/*.ts"
+  "_from": "ark-ts@^0.3.14",
+  "_id": "ark-ts@0.3.14",
+  "_inBundle": false,
+  "_integrity": "sha512-5ATSXWSG3MWSAx4suAFPEOnvHu+rFhQyTAW/vrfN2oyIL/qvp/YoLqzt9iBhy8e/e3j9HAOxB0rO0Y4olzkDug==",
+  "_location": "/ark-ts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "ark-ts@^0.3.14",
+    "name": "ark-ts",
+    "escapedName": "ark-ts",
+    "rawSpec": "^0.3.14",
+    "saveSpec": null,
+    "fetchSpec": "^0.3.14"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arkecosystem/ark-ts.git"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ark-ts/-/ark-ts-0.3.14.tgz",
+  "_shasum": "d1f63f99f3514910b4c2562697988f6c6bfdb9d6",
+  "_spec": "ark-ts@^0.3.14",
+  "_where": "/Users/teddymeksavanh/Documents/dev/mobile-wallet",
+  "author": {
+    "name": "Lúcio Rubens",
+    "email": "lucio@ark.io"
   },
   "bugs": {
     "url": "https://github.com/ArkEcosystem/ark-ts/issues"
   },
-  "homepage": "https://github.com/ArkEcosystem/ark-ts#readme",
-  "keywords": [
-    "ark",
-    "api",
-    "blockchain",
-    "cryptocurrency",
-    "typescript"
-  ],
-  "author": "Lúcio Rubens <lucio@ark.io>",
-  "license": "MIT",
+  "bundleDependencies": false,
   "dependencies": {
     "@types/bigi": "^1.4.0",
     "@types/node": "^8.0.12",
@@ -47,6 +48,8 @@
     "secp256k1": "^3.3.0",
     "wif": "^2.0.6"
   },
+  "deprecated": false,
+  "description": "An ARK API wrapper, written in TypeScript to interact with ARK blockchain.",
   "devDependencies": {
     "@types/chai": "^4.0.1",
     "@types/mocha": "^2.2.41",
@@ -59,5 +62,30 @@
     "typedoc": "^0.8.0",
     "typedoc-plugin-external-module-map": "^0.0.6",
     "typescript": "^2.4.1"
-  }
+  },
+  "homepage": "https://github.com/ArkEcosystem/ark-ts#readme",
+  "keywords": [
+    "ark",
+    "api",
+    "blockchain",
+    "cryptocurrency",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ark-ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkecosystem/ark-ts.git"
+  },
+  "scripts": {
+    "build:docs": "typedoc --options typedoc.json src/index.ts",
+    "build:prod": "npm run build:ts && npm run build:docs && npm run copypackage",
+    "build:ts": "shx rm -r lib && tsc -p ./ && touch lib/.gitkeep",
+    "copypackage": "shx cp package.json ./lib/package.json",
+    "lint": "tslint src/**/*.ts",
+    "test": "mocha --opts .mocharc"
+  },
+  "types": "index.d.ts",
+  "version": "0.3.14"
 }
